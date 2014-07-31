@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html Lang="es">
+   <head>
+       <meta chasrset='utf-8'>
+       <link rel="stylesheet" href="stylesheet.css">
+       <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet'>
+       <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+       <script src='scriptPrincipal.js'></script>
+   </head>
+   <body>
+       <div id='contenido'>
+            <header>
+                <hgroup>
+                    <h1>Lucio Chuquilin</h1>
+                </hgroup>
+                <nav>
+                    <ul>
+                        <li><a href='index.html'>Inicio</a></li>
+                        <li><a href='Proyectos.html'>Proyectos</a></li>
+                        <li><a href='Contactos.html'>Contacto</a></li>
+                        <li><a href='Media.html'>Media</a></li>
+                    </ul>
+               </nav>
+            </header>
+            <section>
+               <div id='textoPr'>
+                   <hgroup>
+                       <h1>Contactanos</h1>
+                   </hgroup>
+                   <form>
+                      <label for='nombre'>Nombre:</lablel>
+                      <input type='text' id='nombre' placeholder='Escribe tu nombre' required>
+                      <label for='correo'>E-mail:</lablel>
+                      <input type='email' id='correo' placeholder='Escribe tu e-mail' required>
+                      <label for='edad'>Edad:</lablel>
+                      <input type='number' id='edad' min='0' max='100'>
+                      <label for='clasificacion'>Calificanos:</lablel>
+                      <input type='range' id='clasificacion' min='0' max='10' value='0'>
+                      <label for='fecha'>Fecha:</lablel>
+                      <input type='date' id='fecha'>
+                      <input type='submit' value='Enviar Datos' id='btnSubmit'>
+                   </form>
+               </div>
+            </section>
+       </div>
+       <footer>
+            <canvas id='miCanvas'>
+            </canvas>
+       </footer>
+   </body>
+</html>
